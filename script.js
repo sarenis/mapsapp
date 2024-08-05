@@ -36,7 +36,7 @@ function updateUserLocation(position) {
 }
 
 function handleGeolocationError(error) {
-    alert("Не вдалося отримати геопозицію: " + error.message);
+    console.log("Не вдалося отримати геопозицію: " + error.message);
 }
 
 // Отримання початкового місцезнаходження та ініціалізація карти
