@@ -27,7 +27,7 @@ function updateUserLocation(position) {
     const { latitude, longitude } = position.coords;
     const userLocation = [latitude, longitude];
 
-    // Оновлення положення маркера
+    // Оновлення положення маркера без зміни виду карти
     userMarker.setLatLng(userLocation);
 
     // Перевірка наближення до якихось точок, якщо потрібно
