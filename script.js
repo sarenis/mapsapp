@@ -11,8 +11,17 @@ function initializeMap(position) {
         maxZoom: 19
     }).addTo(map);
 
-    userMarker = L.marker(userLocation).addTo(map)
-        .bindPopup('Ти тут!')
+    const userIcon = L.divIcon({
+        html: `<div class="icon-container">
+                  <img src="saren.jpg" width="30" height="30">
+               </div>`,
+        iconSize: [34, 34], // Розмір іконки разом з рамкою і відступом
+        iconAnchor: [27, 54], // Точка прив'язки іконки (центр низу)
+        popupAnchor: [0, -54] // Точка прив'язки попапа
+    });
+
+    userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map)
+        .bindPopup('Ти тут!');
 
     // Налаштування постійного оновлення місцезнаходження
     navigator.geolocation.watchPosition(updateUserLocation, handleGeolocationError, {
