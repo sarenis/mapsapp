@@ -13,11 +13,11 @@ function initializeMap(position) {
 
     const userIcon = L.divIcon({
         html: `<div class="icon-container">
-                  <img src="saren.jpg" width="30" height="30">
+                  <img src="saren.jpg" width="35" height="35">
                </div>`,
-        iconSize: [34, 34], // Розмір іконки разом з рамкою і відступом
-        iconAnchor: [27, 54], // Точка прив'язки іконки (центр низу)
-        popupAnchor: [0, -54] // Точка прив'язки попапа
+        iconSize: [39, 39], // Розмір іконки разом з рамкою і відступом
+        iconAnchor: [27, 27], // Точка прив'язки іконки (центр низу)
+        popupAnchor: [-8, -27] // Точка прив'язки попапа
     });
 
     userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map)
