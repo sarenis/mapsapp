@@ -9,6 +9,7 @@ function initializeMap(position) {
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19
+        minZoom: 18
     }).addTo(map);
 
     const userIcon = L.divIcon({
