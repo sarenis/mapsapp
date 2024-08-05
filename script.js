@@ -21,7 +21,11 @@ function initializeMap(position) {
     });
 
     userMarker = L.marker(userLocation, { icon: userIcon }).addTo(map)
-        .bindPopup('Ти тут!');
+    
+    userMarker.on('click', function () {
+        map.flyTo(userLocation, map.getMaxZoom());
+    });
+    
 
     // Налаштування постійного оновлення місцезнаходження
     navigator.geolocation.watchPosition(updateUserLocation, handleGeolocationError, {
