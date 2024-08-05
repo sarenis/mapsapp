@@ -2,3 +2,21 @@
     height: 100vh;
     width: 100vw;
 }
+
+.icon-container {
+    display: inline-block;
+    border: 2px solid red; /* Колір та товщина рамки */
+    border-radius: 50%; /* Закруглення рамки */
+    padding: 2px; /* Відступ від зображення до рамки */
+    background-color: white; /* Фон всередині рамки */
+}
+
+.icon-container img {
+    display: block;
+    border-radius: 50%; /* Закруглення самого зображення */
+}
+
+.leaflet-div-icon {
+    background: none !important;
+    border: none !important;
+}
