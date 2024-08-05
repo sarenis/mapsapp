@@ -13,7 +13,6 @@ function initializeMap(position) {
 
     userMarker = L.marker(userLocation).addTo(map)
         .bindPopup('Ти тут!')
-        .openPopup();
 
     // Налаштування постійного оновлення місцезнаходження
     navigator.geolocation.watchPosition(updateUserLocation, handleGeolocationError, {
