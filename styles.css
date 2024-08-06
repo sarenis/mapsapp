@@ -22,10 +22,9 @@
 }
 
 #iconUpload {
-            display: flex;
-            justify-content: center; /* Горизонтальне центрування */
-            align-items: flex-end; /* Вертикальне центрування */
-            height: 200px;
+            position: absolute;
+            top: 90vh;
+            left: 10px;
             z-index: 1000;
             font-size: 0.9em;
             
